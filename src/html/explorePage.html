@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PK - Explore</title>
+    <link rel="stylesheet" href="../css/explorePage.css">
+    <script src = "../js/jquery/jquery.min.js"></script>
+    <script src="../js/explorePage.js"></script>
+    <link rel="stylesheet" href="../css/dropdown_button.css">
+</head>
+<body>
+
+<div class="top-bar">
+<a href="../../index.html">Return</a>
+    <button onclick="showPopup()">Click Me!</button>
+</div>
+
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p class="popup-text">Welcome to my music page! All of the following are my favorite albums with ratings and reviews. Hover over an album to see its name and rating, described below: </p>
+        <ul class="popup-text">
+            <li>S: Best of the best. Albums that mean a lot to me through content or nostalgic reasons.</li>
+            <li>A: Top tier material. Music that is top class and I think are well above others.</li>
+            <li>B: Great stuff. Music that I would recommend to anyone, but wouldn't expect them to be blown away.</li>
+        </ul>
+        <p class="popup-text" >Some of these albums are going to have reviews and some aren't. That doesn't have anything to do with quality, I just don't have the time for all that writing. </p>
+    </div>
+
+</div>
+
+<div class="art-container" data-text="blonde-text" >
+    <img class="album-art" src="../img/album_art/blonde.jpg">
+    <div class="art-overlay" id="blonde-text">
+        <p class="overlay-text"> Frank Ocean <br/> _______ <br/> <br/> Blonde </p>
+        <button class="rating">S</button>
+        <div class="review">
+            <a class="review-link" href="musicReviews/blondeReview.html">Review</a>
+        </div>
+    </div>
+</div>
+
+<div class="art-container" data-text="turnover-text">
+    <img class="album-art" src="../img/album_art/turnover.jpg">
+    <div class="art-overlay" id="turnover-text">
+        <p class="overlay-text"> Turnover <br/> ______ <br/> <br/> Peripheral Vision </p>
+        <button class="rating">S</button>
+        <div class="review">
+            <a class="review-link" href="musicReviews/turnoverReview.html">Review</a>
+        </div>
+    </div>
+</div>
+
+<div class="art-container" data-text="benji-text">
+    <img class="album-art" src="../img/album_art/benji.jpg">
+    <div class="art-overlay" id="benji-text">
+        <p class="overlay-text"> Sun  Kil  Moon <br/> _______ <br/> <br/> Benji </p>
+        <button class="rating">S</button>
+        <div class="review">
+            <a class="review-link" href="musicReviews/benjiReview.html">Review</a>
+        </div>
+    </div>
+</div>
+
+<div class="art-container" data-text="gambino-text">
+    <img class="album-art" src="../img/album_art/gambino.jpg">
+    <div class="art-overlay" id="gambino-text">
+        <p class="overlay-text"> Childish Gambino <br/> _______ <br/> <br/> Awaken, My Love! </p>
+        <button class="rating">A</button>
+    </div>
+</div>
+
+<div class="art-container" data-text="voxtrot-text">
+    <img class="album-art" src="../img/album_art/voxtrot.jpg">
+    <div class="art-overlay" id="voxtrot-text">
+        <p class="overlay-text"> Voxtrot <br/> _______ <br/> <br/> Raised By Wolves </p>
+        <button class="rating">B</button>
+    </div>
+</div>
+
+<div class="art-container" data-text="tpab-text">
+    <img class="album-art" src="../img/album_art/tpab.png">
+    <div class="art-overlay" id="tpab-text">
+        <p class="overlay-text"> Kendrick Lamar <br/> _______ <br/> <br/> To Pimp A Butterfly </p>
+        <button class="rating">S</button>
+    </div>
+</div>
+
+<div class="art-container" data-text="gethurt-text">
+    <img class="album-art" src="../img/album_art/gethurt.jpg">
+    <div class="art-overlay" id="gethurt-text">
+        <p class="overlay-text"> The Gaslight Anthem <br/> _______ <br/> <br/> Get Hurt </p>
+        <button class="rating">B</button>
+    </div>
+</div>
+
+<div class="art-container" data-text="total-text">
+    <img class="album-art" src="../img/album_art/total.jpg">
+    <div class="art-overlay" id="total-text">
+        <p class="overlay-text"> Sebastian <br/> _______ <br/> <br/> Total </p>
+        <button class="rating">S</button>
+    </div>
+</div>
+
+<div class="art-container" data-text="national-text">
+    <img class="album-art" src="../img/album_art/national-trouble.png">
+    <div class="art-overlay" id="national-text">
+        <p class="overlay-text"> The National <br/> _______ <br/> <br/> Trouble Will Find Me </p>
+        <button class="rating">A</button>
+    </div>
+</div>
+
+<div class="art-container" data-text="pat-text">
+    <img class="album-art" src="../img/album_art/pat.jpg">
+    <div class="art-overlay" id="pat-text">
+        <p class="overlay-text"> Pat the Bunny <br/> _______ <br/> <br/> Probably Nothing, Possibly Everything </p>
+        <button class="rating">A</button>
+    </div>
+</div>
+
+<div class="art-container" data-text="jackjohnson-text">
+    <img class="album-art" src="../img/album_art/jackjohnson.jpg">
+    <div class="art-overlay" id="jackjohnson-text">
+        <p class="overlay-text"> Jack Johnson <br/> _______ <br/> <br/> In Between Dreams </p>
+        <button class="rating">S</button>
+        <div class="review">
+            <a class="review-link" href="musicReviews/jackJohnsonReview.html">Review</a>
+        </div>
+    </div>
+</div>
+
+<div class="art-container" data-text="tuxedo-text">
+    <img class="album-art" src="../img/album_art/tuxedo.jpg">
+    <div class="art-overlay" id="tuxedo-text">
+        <p class="overlay-text"> Tuxedo <br/> _______ <br/> <br/> Tuxedo </p>
+        <button class="rating">B</button>
+        <div class="review">
+            <a class="review-link" href="#">Review</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="../js/popup.js"></script>
+</body>
+</html>

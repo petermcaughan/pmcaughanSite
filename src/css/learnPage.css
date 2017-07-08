@@ -1,0 +1,123 @@
+body{
+    background-color:#2F4F4F;
+}
+button.accordion {
+    background-color:#98FB98;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color:#98FB98;
+}
+
+button.accordion:after {
+    content: '\002B';
+    background-color:#98FB98;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    width:100%;
+    background-color: #faa;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+ul .accordian-dropdown{
+    list-style-type: none;
+    list-style:none;
+    margin: 0;
+    padding: 10px;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+.accordian-content {
+    display: block;
+    color: #000;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+.accordian-content .active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.accordian-content:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.side-container{
+     background-image: url('../img/album_art/background_test.jpg');
+     position:absolute;
+     top:0px;
+     left:0px;
+     float:left;
+     height:100%;
+     width:15%;
+     border-right: 5px solid;
+ }
+
+.middle-container{
+    color:#cccccc;
+    position:absolute;
+    top:0px;
+    left:15%;
+    float:left;
+    height:100%;
+    width:85%;
+    border-right: 5px solid;
+}
+
+.return-container{
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 87%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.return-button{
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    text-decoration:none;
+}
+
+.return-container .active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.return-container:hover:not(.active) {
+    background-color: #ddd;
+    color: white;
+}
+
+

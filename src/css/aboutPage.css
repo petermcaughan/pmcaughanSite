@@ -1,0 +1,98 @@
+.side-nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.side-nav-dropdown {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    overflow: auto;
+}
+
+body{
+    margin: 0;
+    height:1000px;
+    background-image: url('../img/about/background.png');
+
+}
+
+.my_face {
+    border-radius: 50%;
+    width: 500px;
+    height: auto;
+    display:block;
+    margin-top:0px;
+    margin-left:72%;
+    position:absolute;
+}
+
+.header_name{
+    color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+}
+
+.verticalStrip {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 40%;
+    background-color: lightsteelblue;
+    height:2000px;
+    z-index:-5;
+}
+
+.bio-text{
+    top:250px;
+    position:relative;
+    font-size: 150%;
+    left:15px;
+    width:95%;
+}
+
+.top-bar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 5%;
+    z-index: 5;
+}
+
+.top-bar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.follow-container{
+    top:700px;
+    position: absolute;
+    left:50px;
+    height: 450px;
+    width: 450px;
+    background-color: lightsteelblue;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: #000000;
+    display:inline-block;
+    margin-right: 50px;
+}
+
+p{
+    line-height: 40px;
+}
