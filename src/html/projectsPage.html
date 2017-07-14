@@ -5,6 +5,9 @@
     <title>PK Projects</title>
     <link rel="stylesheet" href="../css/projectsPage.css">
     <link rel="stylesheet" href="../css/musicReview.css">
+    <script src = "../../src/js/jquery/jquery.min.js"></script>
+    <script src = "../../src/js/projects.js"></script>
+
 </head>
 <body>
 
@@ -13,7 +16,7 @@
     <div class="project-name">
         <h1 class="project-name-text">Perceptron &nbsp; Guessing &nbsp; Game</h1>
     </div>
-    <div class="img-container" style="background-color: lightgray;" >
+    <div id="representative" class="img-container" style="background-color: lightgray;" >
         <span class="helper"></span><img class="img" src="../img/projectImg/perceptron.png">
     </div>
     <div class="description-container">
@@ -40,7 +43,9 @@
         <div class="img-container" >
             <span class="helper"></span><img class="img" style="height:400px;" src="../img/projectImg/fotthequeenMap.png">
         </div>
+        <a href="https://www.youtube.com/watch?v=jVVChJlAjTA">
         <button class="pictures">Click Here to See More!</button>
+        </a>
         <div class="description-container">
             <p class="description-text">For The Queen is an HTML multiplayer game based on Node.js and JavaScript. Two players play as spies for England working towards infiltrating a facility to gain valuable information. They work cooperatively to progress through a mansion map,
                 facing randomly generated challenges along the way. This project was completed by a team of four, and my role in this game was handling all server/client interactions, as well as being responsible for being the lead on engine usage. The game engine we used for this project was
@@ -67,7 +72,8 @@
             <span class="helper"></span><img class="img" src="../img/projectImg/buddyMemory.png">
         </div>
         <div class="description-container">
-            <p class="description-text">For The Queen is an HTML multiplayer game based on Node.js and JavasScript.</p>
+            <p class="description-text">This project was an implementation of a buddy memory allocator in C. As shown in the image, the memory allocator uses a binary tree approach
+            to allocate the most ideal amount of memory to a user. This project utilized malloc() and free() functions to seperate and coalesce memory blocks.</p>
         </div>
         <div class="skills-container">
             <ul class="skills-list">Skills/Concepts Used:

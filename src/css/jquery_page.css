@@ -1,10 +1,13 @@
 .main-selector-buttons{
     position: absolute;
-    margin-left:40px;
+    margin-left:5%;
+    overflow: hidden;
+    width:100%;
+    left:0%;
 }
 
 .main-button{
-    margin-right:125px;
+    margin-right:5%;
     float:left;
     display:block;
     height: 100px;
@@ -16,6 +19,7 @@
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     border: 2px solid #000000;
+    overflow: hidden;
 
 }
 

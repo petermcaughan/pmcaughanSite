@@ -28,7 +28,7 @@ body{
 
 .my_face {
     border-radius: 50%;
-    width: 500px;
+    width: 25%;
     height: auto;
     display:block;
     margin-top:0px;
@@ -80,11 +80,11 @@ body{
 }
 
 .follow-container{
-    top:700px;
+    top:30%;
     position: absolute;
-    left:50px;
-    height: 450px;
-    width: 450px;
+    left:3%;
+    height: 50%;
+    width: 23%;
     background-color: lightsteelblue;
     border-radius: 10%;
     border-style: solid;
