@@ -1,3 +1,12 @@
+body{
+    background-color: black;
+}
+
+@font-face{
+    font-family: BEBAS;
+    src: url(../fonts/BEBAS.ttf);
+}
+
 .main-selector-buttons{
     position: absolute;
     margin-left:5%;
@@ -10,16 +19,17 @@
     margin-right:5%;
     float:left;
     display:block;
-    height: 100px;
-    width: 100px;
+    height: 3vw;
+    width: 6vw;
     border-radius: 50%;
     text-align: center;
-    line-height: 80px;
+    line-height: 5.5vw;
     text-decoration: none;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    border: 2px solid #000000;
+    border: 3px solid #000000;
     overflow: hidden;
+    font-size:.9vw;
 
 }
 
@@ -34,19 +44,25 @@
 .paragraph-text{
     font-weight: bold;
     font-size:150%;
+    color:white;
 }
 
 .detail-text{
-    display:none;
     text-align: center;
     margin: 0 auto;
     top:50%;
 }
 
 .welcome{
-    font-size:900%;
+    font-size:4vw;
     font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
 
+.welcome-header{
+    position:absolute;
+    top:-4vw;
+    left:30vw;
 }
 
 .side-img {
@@ -61,4 +77,45 @@
     float:left;
     height:100%;
     width:13%;
+}
+
+.icon{
+    height: 10vw;
+    width:10vw;
+    margin-right:5%;
+    float:left;
+    display:block;
+    text-align: center;
+    line-height: 130px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    font-size: 1vw;
+}
+
+.circle{
+    height:40vw;
+    width: 40vw;
+    border-radius:50%;
+    border: 3px solid #000000;
+    background-color: white;
+    position:absolute;
+    left:30.5vw;
+    top:11vw;
+}
+
+.detail-container{
+    position:absolute;
+    height:15vw;
+    width:25vw;
+    display:none;
+}
+
+.welcome-container{
+    position:absolute;
+    width:100%;
+    height:20vw;
+    top:5vw;
+    left:0px;
 }

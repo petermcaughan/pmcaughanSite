@@ -12,10 +12,17 @@
 </head>
 <body>
 
-<h1 align="center" class="welcome"> welcome. </h1>
+<div class="welcome-container">
+    <div class="welcome-header">
+        <h1 class="welcome"> welcome. </h1>
+    </div>
 
-<p class="paragraph-text" align="center" > Click a button below and look around!</p>
+    <div class="welcome-header" style="left:43vw; top:0vw;">
+        <p class="welcome" style= "font-size:1.5vw;"> hover over a button and look around </p>
+    </div>
 
+</div>
+<!--
 <div class="side-container">
     <img class="side-img" src="src/img/mainPage/rainbow-vertical.png">
 </div>
@@ -23,42 +30,83 @@
 <div class="side-container" style="float:right; left:87%">
     <img class="side-img" src="src/img/mainPage/rainbow-vertical.png">
 </div>
+-->
 
-<div id="aboutText" class="detail-text">
-    <h2> About </h2>
-    <p> Find out more about the site and me! <br/> Includes bio and profiles </p>
+<div id="aboutText" class="detail-container" style="left: 3vw; top: 20vw; background-color: red;">
+    <div class="detail-text">
+        <h2 style="font-family:BEBAS;"> About </h2>
+        <p> Find out more about the site and me! <br/> Includes bio and profiles </p>
+    </div>
 </div>
 
-<div id="gameText" class="detail-text">
-    <h2> Games </h2>
-    <p> Check out whatever games I'm currently working on! <br/> Includes phaser.io browser games</p>
+<div id="gameText" class="detail-container" style="left: 3vw; top: 3vw; background-color: yellow;">
+    <div class="detail-text">
+        <h2 style="font-family:BEBAS;"> Games </h2>
+        <p> Have some fun! <br/> Includes phaser.io browser games</p>
+    </div>
 </div>
 
-<div id="learnText" class="detail-text">
-    <h2> Interests </h2>
-    <p> Check out some concepts I think are pretty neat! <br/> Includes various information</p>
+<div id="learnText" class="detail-container" style="left: 70vw; top: 3vw; background-color: green;">
+    <div class="detail-text">
+        <h2 style="font-family:BEBAS;"> Experience </h2>
+        <p> Check out some positions I've held in the past! <br/> Includes jobs and organizational roles </p>
+    </div>
 </div>
 
-<div id="exploreText" class="detail-text">
-    <h2> Explore </h2>
-    <p> See my music taste! <br/> Includes my favorite albums and ratings </p>
+<div id="exploreText" class="detail-container" style="left: 3vw; top: 33vw; background-color: dodgerblue;">
+    <div class="detail-text">
+        <h2 style="font-family:BEBAS;"> Explore </h2>
+        <p> See my music taste! <br/> Includes my favorite albums and ratings </p>
+    </div>
 </div>
 
-<div id="projectsText" class="detail-text">
-    <h2> Projects </h2>
-    <p> Take a look at other things I've done! </p>
+<div id="projectsText" class="detail-container" style="left: 72vw; top: 21vw; background-color: purple;">
+    <div  class="detail-text">
+        <h2 style="font-family:BEBAS;"> Projects </h2>
+        <p> Take a look at other things I've done! <br/> Includes descriptions and source code </p>
+    </div>
 </div>
 
-<div class="main-selector-buttons" style="top: 60%; left: 30%;">
-    <a class="main-button" data-text="aboutText" style="background-color: #f44336" href="src/html/aboutPage.html">About</a>
-    <a class="main-button" data-text="gameText" style="background-color: #ffeb3b" href="src/html/gamePage.html">Games</a>
-    <a class="main-button" data-text="learnText" style="background-color: #4caf50" href="src/html/learnPage.html">Interests</a>
+<div id="newsText" class="detail-container" style="left: 72vw; top: 33vw; background-color: darkorange;">
+    <div class="detail-text">
+        <h2 style="font-family:BEBAS;"> News </h2>
+        <p> Read some articles I find interesting! <br/> Includes links to external sites </p>
+    </div>
 </div>
 
-<div class="main-selector-buttons"  style="top: 80%; left: 35.5%;">
+<div class="circle" id="circle"> </div>
+
+<div class="main-selector-buttons" style="top: 15vw; left: 42.5vw;">
+    <a class="main-button" data-text="gameText" style="background-color: #ffeb3b;" href="src/html/gamePage.html">Games</a>
+</div>
+
+<div class="main-selector-buttons" style="top: 22vw; left: 30vw;">
+    <a  id="representative" class="main-button" data-text="aboutText" style="background-color: #f44336" href="src/html/aboutPage.html">About</a>
+</div>
+
+<div class="main-selector-buttons" style="top: 22vw; left: 55vw;">
+    <a class="main-button" data-text="learnText" style="background-color: #4caf50" href="src/html/experiencePage.html">Experience</a>
+</div>
+
+<div class="main-selector-buttons" style="top: 35vw; left: 30vw;">
     <a class="main-button" data-text="exploreText" style="background-color: #2196f3" href="src/html/explorePage.html">Explore</a>
+</div>
+
+<div class="main-selector-buttons" style="top: 26vw; left: 40.5vw;">
+    <img class="icon" src="src/img/mainPage/me.GIF">
+</div>
+
+<div class="main-selector-buttons" style="top: 35vw; left: 55vw;">
     <a class="main-button" data-text="projectsText" style="background-color: #9c27b0" href="src/html/projectsPage.html">Projects</a>
 </div>
+
+<div class="main-selector-buttons" style="top: 42vw; left: 42.5vw;">
+    <a class="main-button" data-text="newsText" style="background-color: #ffa500" href="src/html/newsPage.html">News</a>
+</div>
+
+
+
+
 
 
 </body>

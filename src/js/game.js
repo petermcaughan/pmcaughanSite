@@ -14,9 +14,9 @@ function preload () {
     //  string by which we'll identify the image later in our code.
 
     //  The second parameter is the URL of the image (relative)
-    game.load.image('einstein', 'assets/einstein.jpg');
-    game.load.image('background', 'assets/background.jpg');
-    game.load.spritesheet('robot', 'assets/robosheet.bmp', 50, 100);
+    game.load.image('einstein', '../../assets/einstein.jpg');
+    game.load.image('background', '../../assets/background.jpg');
+    game.load.spritesheet('robot', '../../assets/robosheet.bmp', 50, 100);
 
 }
 

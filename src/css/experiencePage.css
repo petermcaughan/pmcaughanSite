@@ -1,0 +1,36 @@
+@font-face{
+    font-family: BEBAS;
+    src: url(../fonts/BEBAS.ttf);
+}
+
+.position-container {
+    float: left;
+    height: 30vw;
+    width: 45vw;
+    background-color: #7FFA7F;
+    margin: 1vw;
+    margin-left:2.5vw;
+}
+
+.experience-description {
+    position:relative;
+    width:100%;
+    height: 5vw;
+    text-align: center;
+    font-family:BEBAS;
+    font-size: 4vw;
+}
+
+.experience-type-container{
+    width:100%;
+    height:70vw;
+    position:relative;
+}
+
+.position-img{
+    max-height:10vw;
+    max-width:10vw;
+    top:5vw;
+    left:5vw;
+
+}

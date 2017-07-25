@@ -1,0 +1,32 @@
+body{
+    background-color: lawngreen;
+
+}
+
+.page-container{
+    background-color: lightskyblue;
+    top:10%;
+    left:10%;
+    width:80%;
+    height: 80%;
+    border-radius:5%;
+    border-style: solid;
+    border-color: #000000;
+    position:absolute;
+}
+
+@font-face{
+    font-family: BEBAS;
+    src: url(../fonts/BEBAS.ttf);
+}
+
+.main-text-container{
+    top:0%;
+    left:5%;
+    position:absolute;
+}
+
+.games-text{
+    font-family: BEBAS;
+    font-size:3vw;
+}
