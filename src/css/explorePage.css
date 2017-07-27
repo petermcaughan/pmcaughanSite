@@ -15,7 +15,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.5vw;
 }
 
 .top-bar button {
@@ -41,16 +41,16 @@ body{
 div.art-container {
     position:relative;
     float: left;
-    width: 400px;
-    margin-top:50px;
-    height:400px;
-    margin-left:50px;
+    width: 20vw;
+    height:20vw;
+    margin-top:3vw;
+    margin-left:3.5vw;
 }
 
 .album-art {
-    margin-right:50px;
-    width: 400px;
-    height:400px;
+    margin-right:4vw;
+    width: 20vw;
+    height:20vw;
     display:block;
 }
 
@@ -58,9 +58,9 @@ div.art-container {
     position: absolute;
     left:0px;
     top:0px;
-    width: 100%;
+    width: 20vw;
     opacity:0.8;
-    height:100%;
+    height:20vw;
     display:none;
     text-align:center;
     vertical-align:middle;
@@ -69,7 +69,7 @@ div.art-container {
 .overlay-text{
    color:#000000;
     z-index:10;
-    font-size:300%;
+    font-size:2vw;
     opacity:1;
     /*font-family: BEBAS;*/
 
@@ -78,30 +78,30 @@ div.art-container {
 button.rating{
     background-color:Transparent;
     border-radius:50%;
-    width:75px;
-    height:75px;
+    width:4.5vw;
+    height:4.5vw;
     left:2%;
-    top:80%;
+    top:15vw;
     position:absolute;
     border: 2px solid #000000;
-    font-size:200%;
+    font-size:2vw;
 }
 
 .review{
     background-color:Transparent;
     border-radius:50%;
-    width:75px;
-    height:75px;
-    left:79%;
-    top:79%;
+    width:4.5vw;
+    height:4.5vw;
+    left:15vw;
+    top:15vw;
     position:absolute;
     border: 2px solid #000000;
-    font-size:100%;
+    font-size: 1vw;
 }
 
 .review-link{
     font-size:110%;
-    top:25px;
+    top:1.5vw;
     position:relative;
     text-decoration: none;
     color: black;

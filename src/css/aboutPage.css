@@ -55,7 +55,7 @@ body{
 .bio-text{
     top:250px;
     position:relative;
-    font-size: 150%;
+    font-size: 1.2vw;
     left:15px;
     width:95%;
 }
@@ -83,7 +83,7 @@ body{
     top:30%;
     position: absolute;
     left:3%;
-    height: 50%;
+    height: 24vw;
     width: 23%;
     background-color: lightsteelblue;
     border-radius: 10%;

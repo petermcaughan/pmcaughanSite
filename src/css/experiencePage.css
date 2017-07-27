@@ -28,9 +28,18 @@
 }
 
 .position-img{
-    max-height:10vw;
-    max-width:10vw;
-    top:5vw;
-    left:5vw;
+    height:15vw;
+    width:15vw;
+    top:2vw;
+    left:28vw;
+    position:relative;
+}
 
+.position-title-container{
+    font-size:1.3vw;
+    position:relative;
+    top:-12vw;
+    left:1vw;
+    color:black;
+    text-decoration: underline;
 }

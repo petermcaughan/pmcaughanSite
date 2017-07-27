@@ -95,14 +95,14 @@ body{
 }
 
 .circle{
-    height:40vw;
-    width: 40vw;
+    height:38vw;
+    width: 38vw;
     border-radius:50%;
     border: 3px solid #000000;
     background-color: white;
     position:absolute;
-    left:30.5vw;
-    top:11vw;
+    left:31.5vw;
+    top:12vw;
 }
 
 .detail-container{
