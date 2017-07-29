@@ -86,6 +86,10 @@
     src: url(../fonts/Clarendon.ttf);
 }
 
+@font-face{
+    font-family: Montserrat_reg;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
 
 .info-text{
     font-size:5vw;
@@ -117,7 +121,8 @@ p{
 }
 
 .text{
-    font-family: clarendon;
+    /*font-family: clarendon;*/
+    font-family: Montserrat_reg;
     color:white;
     font-size:1.25vw;
 }
