@@ -5,14 +5,14 @@
 .project-container{
     position: relative;
     width:100%;
-    height:800px;
+    height:45vw;
     float:left;
 }
 
 .img-container {
     position: absolute;
-    left: 100px;
-    top: 250px;
+    left: 4vw;
+    top: 10vw;
     height: 50%;
     width: 20%;
     border: 2px solid #000000;
@@ -29,21 +29,22 @@
 .project-name{
     position:absolute;
     top:0px;
-    left:50px;
-    font-size:180%;
+    left:4vw;
+    font-size:3vw;
 }
 
 .description-container{
-    left:30%;
-    top:20%;
+    left:30vw;
+    top:7vw;
     position:absolute;
-    width:60%;
+    width:60vw;
 }
 
 .skills-container{
-    top:60%;
-    left:30%;
+    top:25vw;
+    left:28vw;
     position:absolute;
+    font-family: Montserrat_reg;
 }
 
 .skills-list{
@@ -56,26 +57,26 @@
 }
 
 .skill{
-    font-size:90%;
+    font-size:2vw;
     text-decoration:none;
-    margin-top:20px;
+    margin-top:1vw;
 
 }
 
 .download-button{
     background-color:grey;
-    top:70%;
-    left:80%;
+    top:30vw;
+    left:80vw;
     border: 2px solid #000000;
     position:absolute;
-    width:200px;
-    height:100px;
+    width:10vw;
+    height:5vw;
     text-align: center;
 
 }
 
 .project-name-text{
-    font-size:250%;
+    font-size:3.5vw;
     font-family:BEBAS;
 }
 
@@ -84,15 +85,21 @@
     src: url(../fonts/BEBAS.ttf);
 }
 
+@font-face{
+    font-family: Montserrat_reg;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
 .download-text{
     text-decoration:none;
     color:black;
-    font-size:200%;
+    font-size:2vw;
 }
 
 .description-text{
-    font-size: 1.5vw;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25vw;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: Montserrat_reg;
 }
 
 .helper {
@@ -103,8 +110,8 @@
 
 .pictures{
     position:absolute;
-    left:12%;
-    top: 80%;
-    width:125px;
-    height:75px;
+    left:9vw;
+    top: 31vw;
+    width:10vw;
+    height:3vw;
 }

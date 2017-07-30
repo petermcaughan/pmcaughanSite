@@ -23,16 +23,23 @@ body{
     margin: 0;
     height:1000px;
     background-image: url('../img/about/background.png');
-
+    font-family: Montserrat_reg;
 }
+
+
+@font-face{
+    font-family: Montserrat_reg;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
 
 .my_face {
     border-radius: 50%;
-    width: 25%;
+    width: 25vw;
     height: auto;
     display:block;
     margin-top:0px;
-    margin-left:72%;
+    left:72vw;
     position:absolute;
 }
 
@@ -45,19 +52,19 @@ body{
 .verticalStrip {
     position: absolute;
     top: 0;
-    left: 30%;
-    width: 40%;
+    left: 30vw;
+    width: 40vw;
     background-color: lightsteelblue;
-    height:2000px;
+    height:140vw;
     z-index:-5;
 }
 
 .bio-text{
-    top:250px;
-    position:relative;
+    top:15vw;
+    position:absolute;
     font-size: 1.2vw;
-    left:15px;
-    width:95%;
+    left:1vw;
+    width:39vw;
 }
 
 .top-bar {
@@ -65,7 +72,7 @@ body{
     background-color: #333;
     position: fixed;
     top: 0;
-    width: 5%;
+    width: 5vw;
     z-index: 5;
 }
 
@@ -74,25 +81,25 @@ body{
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1vw 1vw;
     text-decoration: none;
-    font-size: 17px;
+    font-size:1vw;
 }
 
 .follow-container{
-    top:30%;
+    top:15vw;
     position: absolute;
-    left:3%;
+    left:3vw;
     height: 24vw;
-    width: 23%;
+    width: 25vw;
     background-color: lightsteelblue;
     border-radius: 10%;
     border-style: solid;
     border-color: #000000;
     display:inline-block;
-    margin-right: 50px;
+    margin-right: 0vw;
 }
 
 p{
-    line-height: 40px;
+    line-height: 2.5vw;
 }

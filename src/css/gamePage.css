@@ -1,14 +1,25 @@
 body{
-    background-color: lawngreen;
+    background-color: white;
 
 }
 
+@font-face{
+    font-family: BEBAS;
+    src: url(../fonts/BEBAS.ttf);
+}
+
+@font-face{
+    font-family: Montserrat_reg;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+
 .page-container{
-    background-color: lightskyblue;
-    top:10%;
-    left:10%;
-    width:80%;
-    height: 80%;
+    background-color: black;
+    top:5vw;
+    left:10vw;
+    width:80vw;
+    height: 40vw;
     border-radius:5%;
     border-style: solid;
     border-color: #000000;
@@ -22,11 +33,63 @@ body{
 
 .main-text-container{
     top:0%;
-    left:5%;
+    left:5vw;
     position:absolute;
+    color:white;
 }
 
 .games-text{
     font-family: BEBAS;
     font-size:3vw;
+}
+
+.games-container{
+    display: block;
+    position:absolute;
+    top:10vw;
+    background-color: black;
+    left:5vw;
+    width:70vw;
+    height: 25vw;
+}
+
+.game{
+    float:left;
+    position:relative;
+    height:10vw;
+    width:20vw;
+    background:blue;
+    margin-right: 3vw;
+    margin-bottom: 3vw;
+}
+
+.game-img{
+    position:relative;
+    left:1vw;
+    top:1vw;
+    height:5vw;
+    width:5vw;
+}
+
+.game-title{
+    position:absolute;
+    top:0vw;
+    left:7vw;
+    width:10vw;
+    height:2vw;
+    font-family: BEBAS;
+    vertical-align: middle;
+    font-size:2vw;
+    line-height:0vw;
+}
+
+.game-description{
+    position:absolute;
+    top:4vw;
+    left:7.5vw;
+    font-family:Montserrat_reg;
+    color:black;
+    width:10vw;
+    height:5vw;
+
 }
