@@ -3,6 +3,18 @@
     src: url(../fonts/BEBAS.ttf);
 }
 
+@font-face{
+    font-family: Montserrat_reg;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+body{
+    font-family: Montserrat_reg;
+    background-color: black;
+    color:white;
+    height:auto;
+}
+
 .position-container {
     float: left;
     height: 30vw;
@@ -14,7 +26,7 @@
 
 .experience-description {
     position:relative;
-    width:100%;
+    width:100vw;
     height: 5vw;
     text-align: center;
     font-family:BEBAS;
@@ -22,7 +34,7 @@
 }
 
 .experience-type-container{
-    width:100%;
+    width:100vw;
     height:70vw;
     position:relative;
 }
@@ -38,8 +50,40 @@
 .position-title-container{
     font-size:1.3vw;
     position:relative;
-    top:-12vw;
+    top:-16vw;
     left:1vw;
     color:black;
     text-decoration: underline;
+}
+
+.experience-details {
+    position: relative;
+    top: -13vw;
+    left: 1vw;
+    height: 21vw;
+    width: 26vw;
+    background-color: red;
+}
+
+.skills-list{
+    position: relative;
+    top: -23vw;
+    left: 28vw;
+    height: 10vw;
+    width: 15vw;
+    background-color: blue;
+}
+
+.date-range-container{
+    position:relative;
+    top:-49vw;
+    left:3vw;
+    width:20vw;
+    height:3vw;
+    z-index:10;
+}
+
+.date-text{
+    font-size:1.5vw;
+    color:black;
 }
