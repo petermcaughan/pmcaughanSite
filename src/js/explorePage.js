@@ -11,7 +11,6 @@ $(document).ready(function() {
         var text = $(this).data('text');
         //Going to have 5 possible colors
         var hash = Math.abs((text.hashCode())) % 5;
-        console.log("hash is : " + hash);
         switch(hash){
             case 0:
                 color = '#f44336';
@@ -37,10 +36,13 @@ $(document).ready(function() {
 
 
     /*Filtering*/
-    $(".rating-filter").click(function () {
-        var rating = $(this).data('rating');
+    $(".filter").click(function () {
+        var filterType = $(this).data('filter');
+        var value = $(this).data('value');
 
-        if (rating === "ALL"){
+        console.log(filterType + " : Filtertype");
+        console.log(value + "Value Is: ");
+        if (value === "ALL"){
             $('#art-area')
                 .children().stop()
                 .fadeOut(500)
@@ -53,7 +55,6 @@ $(document).ready(function() {
         }
 
         else {
-            //$('.art-container').stop().fadeOut(500).hide();
             $('#art-area')
                 .children().stop()
                 .fadeOut(500)
@@ -61,7 +62,7 @@ $(document).ready(function() {
                 $('#art-area')
                     .children()
                     .filter(function () {
-                        return $(this).data('rating') === rating;
+                        return $(this).data(filterType) === value;
                     }).stop()
                     .fadeIn(500);
             },500);
@@ -69,6 +70,7 @@ $(document).ready(function() {
         });
 
 
+    /*
     $(".review-filter").click(function () {
         var reviewPresent = $(this).data('review');
 
@@ -100,7 +102,7 @@ $(document).ready(function() {
         }
     });
 
-
+*/
 });
 
 /*Taken from http://werxltd.com/wp/2010/05/13/javascript-implementation-of-javas-string-hashcode-method/

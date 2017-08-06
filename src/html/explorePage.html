@@ -69,27 +69,30 @@
     <button class="accordion" >Rating</button>
     <div class="panel">
         <ul class="accordian-dropdown" style="list-style: none;">
-            <li><a class=" accordian-content rating-filter" data-rating="S">S</a></li>
-            <li><a class=" accordian-content rating-filter" data-rating="A">A</a></li>
-            <li><a class=" accordian-content rating-filter" data-rating="B">B</a></li>
-            <li><a class=" accordian-content rating-filter" data-rating="ALL">ALL</a></li>
+            <li><a class=" accordian-content filter" data-value="S" data-filter="rating">S</a></li>
+            <li><a class=" accordian-content filter" data-value="A" data-filter="rating">A</a></li>
+            <li><a class=" accordian-content filter" data-value="B" data-filter="rating">B</a></li>
+            <li><a class=" accordian-content filter" data-value="ALL" data-filter="rating">ALL</a></li>
         </ul>
     </div>
     <button class="accordion" >Genre</button>
     <div class="panel">
         <ul class="accordian-dropdown" style="list-style: none;">
-            <li><a class=" accordian-content genre-filter">Electronic</a></li>
-            <li><a class=" accordian-content genre-filter">Rock</a></li>
-            <li><a class=" accordian-content genre-filter">Indie</a></li>
-            <li><a class=" accordian-content genre-filter">ALL</a></li>
+            <li><a class=" accordian-content filter" data-value="Electronic" data-filter="genre">Electronic</a></li>
+            <li><a class=" accordian-content filter" data-value="Rock" data-filter="genre">Rock</a></li>
+            <li><a class=" accordian-content filter" data-value="Indie" data-filter="genre">Indie</a></li>
+            <li><a class=" accordian-content filter" data-value="R&B" data-filter="genre">R&B</a></li>
+            <li><a class=" accordian-content filter" data-value="Rap" data-filter="genre">Rap</a></li>
+            <li><a class=" accordian-content filter" data-value="Unsorted" data-filter="genre">Unsorted</a></li>
+            <li><a class=" accordian-content filter" data-value="ALL" data-filter="genre">ALL</a></li>
         </ul>
     </div>
     <button class="accordion">Reviews</button>
     <div class="panel">
         <ul class="accordian-dropdown" style="list-style: none;">
-            <li><a class=" accordian-content review-filter" data-review="Yes">Review</a></li>
-            <li><a class=" accordian-content review-filter" data-review="No">No Review</a></li>
-            <li><a class=" accordian-content review-filter" data-review="ALL">ALL</a></li>
+            <li><a class=" accordian-content filter" data-value= "Yes" data-filter="reviewPresent">Review</a></li>
+            <li><a class=" accordian-content filter" data-value= "No" data-filter="reviewPresent">No Review</a></li>
+            <li><a class=" accordian-content filter" data-value= "ALL" data-filter="reviewPresent">ALL</a></li>
         </ul>
     </div>
 </div>
@@ -112,6 +115,7 @@
 </div>
 
 <div id="art-area">
+
 <div class="art-container" data-text="blonde-text" data-genre="R&B" data-rating="S" data-review="Yes">
     <img class="album-art" src="../img/album_art/blonde.jpg">
     <div class="art-overlay" id="blonde-text">
@@ -162,6 +166,24 @@
 </div>
 
 <!-- ADD NEW REVIEWS HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Want to keep these 3 at the top-->
+
+
+    <div class="art-container" data-text="czarface-text" data-genre="Rap" data-rating="A" data-review="No">
+        <img class="album-art" src="../img/album_art/czarface.jpg">
+        <div class="art-overlay" id="czarface-text">
+            <p class="overlay-text"> Czarface <br/> _ <br/> <br/> Every Hero Needs A Villain </p>
+            <button class="rating">A</button>
+        </div>
+    </div>
+
+
+    <div class="art-container" data-text="gilgamesh-text" data-genre="Indie" data-rating="B" data-review="No">
+        <img class="album-art" src="../img/album_art/gilgamesh.jpg">
+        <div class="art-overlay" id="gilgamesh-text">
+            <p class="overlay-text"> Gypsy & The Cat <br/> _ <br/> <br/> Gilgamesh </p>
+            <button class="rating">B</button>
+        </div>
+    </div>
 
 <div class="art-container" data-text="lany-text" data-genre="Indie" data-rating="A" data-review="No">
     <img class="album-art" src="../img/album_art/lany.jpg">
@@ -214,6 +236,14 @@
     </div>
 </div>
 
+    <div class="art-container" data-text="soursoul-text" data-genre="Rap" data-rating="A" data-review="No">
+        <img class="album-art" src="../img/album_art/soursoul.jpg">
+        <div class="art-overlay" id="soursoul-text">
+            <p class="overlay-text"> Ghostface Killah <br/> _ <br/> <br/> Sour Soul </p>
+            <button class="rating">A</button>
+        </div>
+    </div>
+
 <div class="art-container" data-text="gethurt-text" data-genre="Rock" data-rating="B" data-review="No">
     <img class="album-art" src="../img/album_art/gethurt.jpg">
     <div class="art-overlay" id="gethurt-text">
@@ -246,7 +276,7 @@
     </div>
 </div>
 
-<div class="art-container" data-text="jackjohnson-text" data-genre="Indie" data-rating="S" data-review="Yes">
+<div class="art-container" data-text="jackjohnson-text" data-genre="Unsorted" data-rating="S" data-review="Yes">
     <img class="album-art" src="../img/album_art/jackjohnson.jpg">
     <div class="art-overlay" id="jackjohnson-text">
         <p class="overlay-text"> Jack Johnson <br/> _ <br/> <br/> In Between Dreams </p>
@@ -299,6 +329,15 @@
         <button class="rating">A</button>
     </div>
 </div>
+
+    <div class="art-container" data-text="vince-text" data-genre="Rap" data-rating="A" data-review="No">
+        <img class="album-art" src="../img/album_art/vince.jpg">
+        <div class="art-overlay" id="vince-text">
+            <p class="overlay-text"> Vince Staples <br/> _ <br/> <br/> Summertime '06 </p>
+            <button class="rating">A</button>
+        </div>
+    </div>
+
 
 </div>
 
