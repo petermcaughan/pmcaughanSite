@@ -39,9 +39,6 @@ $(document).ready(function() {
     $(".filter").click(function () {
         var filterType = $(this).data('filter');
         var value = $(this).data('value');
-
-        console.log(filterType + " : Filtertype");
-        console.log(value + "Value Is: ");
         if (value === "ALL"){
             $('#art-area')
                 .children().stop()

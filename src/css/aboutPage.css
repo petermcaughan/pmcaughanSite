@@ -21,7 +21,7 @@
 
 body{
     margin: 0;
-    height:1000px;
+    height:auto;
     background-image: url('../img/about/background.png');
     font-family: Montserrat_reg;
     color:white;
@@ -58,7 +58,7 @@ body{
     width: 40vw;
     /*background-color: lightsteelblue;*/
     background-color: black;
-    height:140vw;
+    height:160vw;
     z-index:-5;
 }
 
