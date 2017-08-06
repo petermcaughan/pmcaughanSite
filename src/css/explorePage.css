@@ -6,7 +6,7 @@
     width: 100%; /* Full width */
     z-index: 5;
     text-align:center;
-    height:3.5vw;
+    height:3vw;
 }
 
 @font-face{
@@ -21,7 +21,7 @@
     text-align: center;
     padding: 1vw 1vw;
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 1.25vw;
 }
 
 .top-bar button {
@@ -48,11 +48,12 @@ body{
 div.art-container {
     position:relative;
     float: left;
-    width: 20vw;
-    height:20vw;
-    margin-top:3vw;
-    margin-left:3.5vw;
-    top:3vw;
+    width: 16vw;
+    height:16vw;
+    margin-top:5vw;
+    margin-left:5vw;
+    top:-4vw;
+    left:8vw;
 }
 
 .album-art {
@@ -168,3 +169,82 @@ button.rating{
 }
 
 
+/*FOR DROPDOWN MENU*/
+
+
+button.accordion {
+    background-color:#333;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1vw;
+    transition: 0.4s;
+    top:10vw;
+    font-family: Montserrat_reg;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color:#333;
+}
+
+button.accordion:after {
+    content: '\002B';
+    background-color:#333;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    width:100%;
+    background-color: #faa;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+ul .accordian-dropdown{
+    list-style-type: none;
+    list-style:none;
+    margin: 0;
+    padding: 10px;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+.accordian-content {
+    display: block;
+    color: white;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+.accordian-content .active {
+    background-color:#333;
+    color: white;
+}
+
+.accordian-content:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.side-container{
+    position:fixed;
+    top:0vw;
+    left:0px;
+    float:left;
+    height:100%;
+    width:12vw;
+    font-size:1vw;
+    background-color:#333;
+    font-family: Montserrat_reg;
+}

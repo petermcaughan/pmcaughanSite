@@ -36,6 +36,45 @@ $(document).ready(function() {
     });
 
 
+    /*Filtering*/
+    $(".rating-filter").click(function () {
+        var rating = $(this).data('rating');
+
+        if (rating === "ALL"){
+            $('.art-container').stop().show(500);
+        }
+
+        else {
+            $('.art-container').stop().hide(500);
+            $('body')
+                .children()
+                .filter(function () {
+                    return $(this).data('rating') === rating;
+                })
+                .show(100);
+        }
+    });
+
+    $(".review-filter").click(function () {
+        var reviewPresent = $(this).data('review');
+        console.log(reviewPresent);
+
+        if (reviewPresent === "ALL"){
+            $('.art-container').stop().show(500);
+        }
+
+        else {
+            $('.art-container').stop().hide(500);
+            $('body')
+                .children()
+                .filter(function () {
+                    return $(this).data('review') === reviewPresent;
+                })
+                .show(100);
+        }
+    });
+
+
 });
 
 /*Taken from http://werxltd.com/wp/2010/05/13/javascript-implementation-of-javas-string-hashcode-method/
@@ -51,3 +90,9 @@ Going to try and diversify dropdown color without anything needed by me.*/
  return hash;
  }
 
+
+/*For filtering options!! */
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
