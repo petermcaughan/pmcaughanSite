@@ -41,36 +41,62 @@ $(document).ready(function() {
         var rating = $(this).data('rating');
 
         if (rating === "ALL"){
-            $('.art-container').stop().show(500);
+            $('#art-area')
+                .children().stop()
+                .fadeOut(500)
+            window.setTimeout(function(){
+                $('#art-area')
+                    .children()
+                    .stop()
+                    .fadeIn(500);
+            },500);
         }
 
         else {
-            $('.art-container').stop().hide(500);
-            $('body')
-                .children()
-                .filter(function () {
-                    return $(this).data('rating') === rating;
-                })
-                .show(100);
+            //$('.art-container').stop().fadeOut(500).hide();
+            $('#art-area')
+                .children().stop()
+                .fadeOut(500)
+            window.setTimeout(function(){
+                $('#art-area')
+                    .children()
+                    .filter(function () {
+                        return $(this).data('rating') === rating;
+                    }).stop()
+                    .fadeIn(500);
+            },500);
         }
-    });
+        });
+
 
     $(".review-filter").click(function () {
         var reviewPresent = $(this).data('review');
-        console.log(reviewPresent);
 
         if (reviewPresent === "ALL"){
-            $('.art-container').stop().show(500);
+            $('#art-area')
+                .children().stop()
+                .fadeOut(500)
+            window.setTimeout(function(){
+                $('#art-area')
+                    .children()
+                    .stop()
+                    .fadeIn(500);
+            },500);
         }
 
         else {
-            $('.art-container').stop().hide(500);
-            $('body')
-                .children()
-                .filter(function () {
-                    return $(this).data('review') === reviewPresent;
-                })
-                .show(100);
+            //$('.art-container').stop().fadeOut(500).hide();
+            $('#art-area')
+                .children().stop()
+                .fadeOut(500)
+            window.setTimeout(function(){
+                $('#art-area')
+                    .children()
+                    .filter(function () {
+                        return $(this).data('review') === reviewPresent;
+                    }).stop()
+                    .fadeIn(500);
+            },500);
         }
     });
 
