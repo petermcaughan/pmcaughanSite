@@ -5,6 +5,10 @@
     <title>idk man</title>
     <link rel="stylesheet" href="../css/explorePage.css">
     <link rel="stylesheet" href="../css/gamePage.css">
+    <script src = "../../src/js/jquery/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+    <script src = "../../src/js/gamePage.js"></script>
+
 
     <style>
         canvas{
@@ -22,62 +26,81 @@
     <div class="main-text-container">
         <p class="games-text"> GAMES </p>
     </div>
-    <div class="games-container">
-        <div class="game">
-            <img class="game-img" src="../../src/img/gameImg/tetris-test.png">
-            <div class="game-title">
-                <p> Game title </p>
-            </div>
-            <div class="game-description">
-                <p> This is a description of the game. Shouldnt be too short or too long </p>
-            </div>
-        </div>
-        <div class="game" style="background-color: green;">
-            <img class="game-img" src="../../src/img/gameImg/tetris-test.png">
-            <div class="game-title">
-                <p> Testing! </p>
-            </div>
-            <div class="game-description">
-                <p> This is a description of the game. Shouldnt be too short or too long </p>
-            </div>
-        </div>
-        <div class="game" style="background-color: yellow;">
-            <img class="game-img" src="../../src/img/gameImg/tetris-test.png">
-            <div class="game-title">
-                <p> Testing! </p>
-            </div>
-            <div class="game-description">
-                <p> This is a description of the game. Shouldnt be too short or too long </p>
-            </div>
-        </div>
 
-        <div class="game" style="background-color: red;">
-            <img class="game-img" src="../../src/img/gameImg/tetris-test.png">
+
+    <div class="games-container">
+
+        <a href="../js/phaser/examples/games/gemmatchPage.html" style="color:black">
+        <div class="game" data-color="blue">
+            <img class="game-img" src="../../src/img/gameImg/bejeweled.PNG">
             <div class="game-title">
-                <p> Testing! </p>
+                <p> Gem Match </p>
             </div>
             <div class="game-description">
-                <p> This is a description of the game. Shouldnt be too short or too long </p>
+                <p> Practice some bejeweled-style matching skills! </p>
             </div>
         </div>
-        <div class="game" style="background-color: purple;">
-            <img class="game-img" src="../../src/img/gameImg/tetris-test.png">
+        </a>
+
+        <a href="../js/phaser/examples/games/invadersPage.html" style="color:black">
+        <div class="game" style="background-color: green;" data-color="green">
+            <img class="game-img" src="../../src/img/gameImg/space_invader.PNG">
             <div class="game-title">
-                <p> Testing! </p>
+                <p> Space Invaders </p>
             </div>
             <div class="game-description">
-                <p> This is a description of the game. Shouldnt be too short or too long </p>
+                <p> Ever want to only play one level of space invaders? Same! </p>
             </div>
         </div>
-        <div class="game">
-            <img class="game-img" src="../../src/img/gameImg/tetris-test.png">
+        </a>
+
+        <a href="../js/phaser/examples/games/slidingPage.html" style="color:black">
+        <div class="game" style="background-color: yellow;" data-color="yellow">
+            <img class="game-img" src="../../src/img/gameImg/sliding_puzzle.PNG">
             <div class="game-title">
-                <p> Testing! </p>
+                <p> Sliding Puzzle </p>
             </div>
             <div class="game-description">
-                <p> This is a description of the game. Shouldnt be too short or too long </p>
+                <p> Sure to get you frustrated! </p>
             </div>
         </div>
+        </a>
+
+        <a href="../js/phaser/examples/games/tanksPage.html" style="color:black">
+        <div class="game" style="background-color: red;" data-color="red">
+            <img class="game-img" src="../../src/img/gameImg/tanks.PNG">
+            <div class="game-title">
+                <p> Tanks </p>
+            </div>
+            <div class="game-description">
+                <p> Run around and blow up some tanks! </p>
+            </div>
+        </div>
+        </a>
+
+        <a href="../js/phaser/examples/games/simonSaysPage.html" style="color:black">
+        <div class="game" style="background-color: purple;" data-color="purple">
+            <img class="game-img" src="../../src/img/gameImg/simon_says.PNG">
+            <div class="game-title">
+                <p> Simon Says </p>
+            </div>
+            <div class="game-description">
+                <p> Train your brain! </p>
+            </div>
+        </div>
+        </a>
+
+        <a href="../js/phaser/examples/games/breakoutPage.html" style="color:black">
+            <div class="game" data-color="blue">
+                <img class="game-img" src="../../src/img/gameImg/breakout.PNG">
+                <div class="game-title">
+                    <p> Breakout </p>
+                </div>
+                <div class="game-description">
+                    <p> Great time waster! </p>
+                </div>
+            </div>
+        </a>
     </div>
 </div>
 

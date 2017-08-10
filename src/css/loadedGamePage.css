@@ -1,0 +1,31 @@
+.instructions-container{
+
+    height:8vw;
+    width:30vw;
+    background-color: black;
+    color:white;
+    font-size:1vw;
+    position:absolute;
+    left:35vw;
+    top:40vw;
+    text-align:center;
+    vertical-align: middle;
+    font-family: Montserrat_reg;
+}
+
+@font-face{
+    font-family: Montserrat_reg;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+.instructions-text{
+    width:1vw;
+    height:1vw;
+    position:relative;
+    top:1vw;
+    left:1vw;
+    background-color:white;
+
+
+
+}
