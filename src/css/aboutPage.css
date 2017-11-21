@@ -39,7 +39,7 @@ body{
     width: 25vw;
     height: auto;
     display:block;
-    margin-top:0px;
+    margin-top:-10vw;
     left:72vw;
     position:absolute;
 }
@@ -58,7 +58,7 @@ body{
     width: 40vw;
     /*background-color: lightsteelblue;*/
     background-color: black;
-    height:167vw;
+    height:200vw;
     z-index:-5;
 }
 
@@ -91,7 +91,7 @@ body{
 }
 
 .follow-container{
-    top:15vw;
+    top:5vw;
     position: absolute;
     left:3vw;
     height: 24vw;
