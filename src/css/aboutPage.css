@@ -22,7 +22,8 @@
 body{
     margin: 0;
     height:auto;
-    background-image: url('../img/about/background.png');
+    /*background-image: url('../img/about/background.png');*/
+    background-color: #bbbbbb;
     font-family: Montserrat_reg;
     color:white;
 }
@@ -39,9 +40,9 @@ body{
     width: 25vw;
     height: auto;
     display:block;
-    margin-top:-10vw;
+    margin-top:-13vw;
     left:72vw;
-    position:absolute;
+    position:fixed;
 }
 
 .header_name{
@@ -91,8 +92,8 @@ body{
 }
 
 .follow-container{
-    top:5vw;
-    position: absolute;
+    top:13vw;
+    position: fixed;
     left:3vw;
     height: 24vw;
     width: 25vw;

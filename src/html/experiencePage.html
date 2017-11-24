@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <title>Peter's Experience</title>
     <link rel="stylesheet" href="../css/experiencePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src = "../js/jquery/jquery.min.js"></script>
+    <script
+              src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+              integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+              crossorigin="anonymous"></script>
+              
+    <script src="../js/experiencePage.js"></script>
+
 </head>
 <body>
 
-<div class="experience-type-container" style="height:40vw;">
+<div class="experience-type-container" id="right" style="height:40vw;">
 <div class="experience-description"> PROFESSIONAL </div>
 <div class="position-container">
     <img class="position-img" src="../img/experiencePage/detechtion.png">
@@ -34,6 +43,8 @@
 
 </div>
 
+<button class="fa fa-angle-double-right select-button-right" id="rightButton" style="font-size:3vw;"></button>
+
 <div class="position-container">
     <img class="position-img" src="../img/experiencePage/helpdesk.png">
     <div class="position-title-container">
@@ -57,9 +68,10 @@
 
 </div>
 
-
-<div class="experience-type-container">
+<div class="experience-type-container" id="left" style="display: none;">
 <div class="experience-description"> LEADERSHIP </div>
+
+<button class="fa fa-angle-double-left select-button-left" id="leftButton" style="font-size:3vw;  display:none;"></button>
 
 <div class="position-container">
     <img class="position-img" src="../img/experiencePage/kanm.png">
