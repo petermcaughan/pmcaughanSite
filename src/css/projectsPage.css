@@ -2,6 +2,7 @@
 .body{
 
 }
+
 .project-container{
     position: relative;
     width:100%;
@@ -73,7 +74,6 @@
     height:14vw;
     border-radius: 50%;
     text-align: center;
-
 }
 
 .project-name-text{
@@ -94,10 +94,10 @@
 .download-text{
     position:relative;
     text-decoration:none;
-    color:white;
     font-size:2vw;
     top:4vw;
     font-family: Montserrat_reg;
+    color:white;
 }
 
 .description-text{

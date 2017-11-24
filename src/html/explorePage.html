@@ -48,7 +48,7 @@
             top:10vw;
             font-family: Montserrat_reg;
             text-align:center;" onclick="showPopup()">
-        Click Me!
+        Review Description
     </button>
 
     <button style="
@@ -109,7 +109,18 @@
             <li>A: Top tier material. Music that is top class and I think are well above others.</li>
             <li>B: Great stuff. Music that I would recommend to anyone, but wouldn't expect them to be blown away.</li>
         </ul>
-        <p class="popup-text" >Some of these albums are going to have reviews and some aren't. That doesn't have anything to do with quality, I just don't have the time for all that writing. </p>
+        <!--
+        <p class="popup-text" >Some of these albums are going to have reviews and some aren't. That doesn't have anything to do with quality, I just don't have the time for all that writing. </p>-->
+    <div id="example" class="art-container" style="position:relative; left:25vw; top: -6vw;" data-rating="S" data-review="Yes">
+        <div class="art-overlay" style="display:block; background-color: #FFF7FF" >
+            <p class="overlay-text"> Artist Name <br/> _ <br/> <br/> Album Name </p>
+            <button class="rating" style="font-size: 1vw">Score</button>
+            <div class="review">
+                <a class="review-link" style="font-size: 1vw; top:1.2vw;" href="#">Review Link</a>
+            </div>
+        </div>
+    </div>
+
     </div>
 
 </div>

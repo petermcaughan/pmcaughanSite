@@ -102,6 +102,8 @@ body{
     border-color: #000000;
     display:inline-block;
     margin-right: 0vw;
+    text-align: center;
+    vertical-align: center;
 }
 
 p{

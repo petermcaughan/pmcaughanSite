@@ -89,6 +89,7 @@ div.art-container {
 
 button.rating{
     background-color:Transparent;
+    color:black;
     border-radius:50%;
     width:4.5vw;
     height:4.5vw;
@@ -124,23 +125,25 @@ button.rating{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 10vw; /* Location of the box */
+    padding-top: 5vw; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    overflow: none; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
-    background-color: #FFFF7F;
+    background-color: #333;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    color: white;
+    height:80%;
 }
 
 /* The Close Button */
@@ -159,7 +162,7 @@ button.rating{
 }
 
 .popup-text{
-    color:#000000;
+    color:white;
     font-size:1.75vw;
     font-family: Montserrat_reg;
 }
@@ -206,7 +209,7 @@ button.accordion.active:after {
 
 div.panel {
     width:100%;
-    background-color: #faa;
+    background-color: #aaa;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;

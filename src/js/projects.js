@@ -14,6 +14,24 @@ $(function() {
         $('.img-container').css("height", imgWidth);
     });
 
+    $(".download-button").mouseover(function () {
+    	console.log("on");
+        $(this).stop().animate({
+            backgroundColor: "white"
+        }, 100);
+    });
+
+
+    $(".download-button").mouseout(function () {
+    	console.log("off");
+        $(this).stop().animate({
+            backgroundColor: "black"
+        }, {
+            queue: true,
+            duration: 100,
+        });
+
+    });
 
 
 });

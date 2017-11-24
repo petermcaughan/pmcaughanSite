@@ -5,6 +5,13 @@
 
 $(document).ready(function() {
 
+    //Display the modal describing the page only the first time a user visits
+    var isshow = localStorage.getItem('musicPopup');
+    if (isshow== null) {
+        localStorage.setItem('musicPopup', 1);
+        $('.modal').show();
+    }
+
     //Display text over album art when cursor hovers over, remove on hover off
     $(".art-container").hover(function () {
         console.log("Show");
