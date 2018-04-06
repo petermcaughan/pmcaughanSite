@@ -17,7 +17,8 @@ $(function() {
     $(".download-button").mouseover(function () {
     	console.log("on");
         $(this).stop().animate({
-            backgroundColor: "white"
+            backgroundColor: "white",
+            color:"black"
         }, 100);
     });
 
@@ -25,7 +26,8 @@ $(function() {
     $(".download-button").mouseout(function () {
     	console.log("off");
         $(this).stop().animate({
-            backgroundColor: "black"
+            backgroundColor: "black",
+            color:"white"
         }, {
             queue: true,
             duration: 100,
