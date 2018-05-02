@@ -19,8 +19,13 @@
         <h1 class="project-name-text">Brailler</h1>
     </div>
     <div id="representative" class="img-container" style="background-color: lightgray;" >
-        <span class="helper"></span><img class="img" src="src/img/projectImg/Logo.png">
+        <span class="helper"></span><img class="img" style="left:2.5vw;" src="src/img/projectImg/brailler.jpg">
     </div>
+
+    <a href="https://drive.google.com/file/d/1Hzx1awbGTRTpmXj-JI6Jjr1qr4X9-Ylr/view?usp=sharing">
+        <button class="pictures">See the Demo!<br/></button>
+    </a>
+
     <div class="description-container">
         <p class="description-text">
 	Brailler is a Braille printing system designed to be easily used by the blind and non-impaired. The integrated microphone uses Google Speech API to recognize voice, produce a text translation, and send this data to a Raspberry Pi controller. The Pi is wired to a repurposed CNC machine, and using PyCNC libraries it can convert text into motor controls that allow the CNC to print Braille on paper. Additionally, the on-board interface allows for selection of image, PDF, and text files. PyTesseract libraries allow for image-to-text translation, and can feed its output into the Pi as well.
