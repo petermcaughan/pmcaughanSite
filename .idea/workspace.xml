@@ -31,8 +31,8 @@
       <file leaf-file-name="explore.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/explore.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1598">
-              <caret line="197" column="0" lean-forward="true" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+            <state relative-caret-position="-2171">
+              <caret line="186" column="45" lean-forward="true" selection-start-line="186" selection-start-column="45" selection-end-line="186" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -375,17 +375,18 @@
       <workItem from="1504835446318" duration="998000" />
       <workItem from="1505276468645" duration="1173000" />
       <workItem from="1505802161912" duration="1917000" />
-      <workItem from="1525750857798" duration="569000" />
+      <workItem from="1525750857798" duration="2152000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191199000" />
+    <option name="totallyTimeSpent" value="192782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1932" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2534319" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2534319" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -648,14 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/phaser/examples/games/breakoutPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/phaser/examples/games/gemmatchPage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -699,10 +692,18 @@
     <entry file="file://$PROJECT_DIR$/src/html/experiencePage.html" />
     <entry file="file://$PROJECT_DIR$/src/html/explorePage.html" />
     <entry file="file://$PROJECT_DIR$/src/html/gamePage.html" />
+    <entry file="file://$PROJECT_DIR$/src/js/phaser/examples/games/breakoutPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/explore.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="197" column="0" lean-forward="true" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+        <state relative-caret-position="-2171">
+          <caret line="186" column="45" lean-forward="true" selection-start-line="186" selection-start-column="45" selection-end-line="186" selection-end-column="45" />
           <folding />
         </state>
       </provider>
