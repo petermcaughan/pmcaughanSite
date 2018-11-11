@@ -1,21 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Articles</title>
-    <link rel="stylesheet" href="src/css/newsPage.css">
-    <link rel="stylesheet" href="src/css/musicReview.css">
-    <script src = "src/js/jquery/jquery.min.js"></script>
-    <script src="src/js/newsPage.js"></script>
-</head>
+<title>Literature Summaries</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+    .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
+    }
+</style>
 <body>
-    <div class="page-container" style="background-color: black;">
-        <div class="story-container" style="background-color: #444444;">
-            <div class="story-name">   
-                <h1 class="project-name-text">Lorem &nbsp; Ipsum &nbsp; Blah</h1>
-            </div>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
+        <a href="explore.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Music</a>
+        <a href="projects.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projects</a>
+        <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+        <i class="fa fa-remove"></i>
+    </a>
+    <h4 class="w3-bar-item"><b>Links to Source</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="https://ieeexplore.ieee.org/document/6504855">Project Glass: An Extension of The Self</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="http://www.chrisharrison.net/projects/teslatouch/teslatouchUIST2010.pdf">TeslaTouch</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="https://dspace.mit.edu/bitstream/handle/1721.1/82183/862074328-MIT.pdf?sequence=2">See Through Walls with Wi-Fi</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="https://www.youtube.com/watch?v=CzAWndQh6xE">See Through Walls with Wi-Fi: Video</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1 class="w3-text-teal">Project Glass: An Extension of the Self; Thad Starner 2013 </h1>
+            <p>Starner elaborates on design principles that modern wearable devices should be focused around. Wearables should be absolutely natural to interact with, and utilize socially acceptable interactions.
+                For example, voice commands might be effective for home assistants inside a house, but talking to your phone to lower the volume when in a subway isn't the same. In the same way that a wristwatch can be used and forgotten about
+                in the span of seconds, modern wearable devices should be accessible within two seconds (Two Second Rule) and completely unobtrusive beforehand and afterwards. The Google Glass project has aimed to integrate all these principles, one example
+                of which is the HUD displayed in front of the user. It should be easily accessed and provide easily digestible information, and at the same time it shouldn't negatively impact the user's ability to see the 'real world' in front of them.
+            </p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-twothird w3-container">
+            <h1 class="w3-text-teal">TeslaTouch; Chris Harrison et. al 2010</h1>
+            <p>Chris Harrison of Carnegie Mellon University and Disney Research members present technology to enhance touch interfaces with haptic feedback. Touch interface feedback can be tough, as traditional methods like
+             vibration are touch to mechanically implement under a touch interface screen without adding clunkiness or excessive power consumption. However, this team has discovered that by applying a variable AC source
+            across the touch surface, the phenomenon of electrovibration can change the friction of a finger across a surface. The moving a finger across wet rubber causes a strong stuttering motion, while moving a finger across
+             a polished wood surface causes smooth motion. By altering a simple AC source, a single surface can transition between these two qualities. By using finger-tracking software, the friction of a touch surface can be altered to
+            correspond with notable events! Pros: this change is instantaneous and completely uniform across the whole surface, introducing a haptic feedback technology that tackles the problems seen
+                with mechanical haptic feedback. Cons: since these changes are applied uniformly, it's not immediately possible to give different feedback to two fingers simultaneously on the same surface.
+            </p>
+        </div>
+    </div>
+
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1 class="w3-text-teal">See Though Walls with Wi-Fi; Dina Katabi 2013</h1>
+            This is absolutely fascinating! I was lucky enough to attend a talk by Dina Katabi, a professor at MIT, about the different utilizations of wi-fi and RF signals all around us and it was incredible to hear about their accomplishments.
+                The linked paper is actually a thesis, so it's quite a read but definitely worth it! By utilizing signal receivers and transmitters, this team was able to accomplish real-time localization and tracking of numerous
+            moving bodies <i> through walls </i>. With absolutely no visual components, the proposed technology can track even human poses; where your hands, head, and feet are at a given moment in time. This is accomplished using
+            quite a lot of interesting signal processing and machine learning techniques described in the source link. There are many applications of this, but activity recognition was a focus. Now, without installing obtrusive tracking
+            hardware into a home environment, indoor activity of disabled individuals, Alzheimer's patients, and schizophrenics can be analyzed more accurately and wholly than ever before. Taking it one step further, if this technology is installed near
+            a bed, it can utilize the signal reflections of your brain to determine what stage of a sleep cycle you're in. Currently, this can only be accomplished with an <a href="https://cdn.bio-medical.com/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/e/l/electro-cap_large_blue_cap_58-62cm_ref_pin_13_cpz_with_2_eog_electrodes_ear_slits_25_pin_connector-acec100606-false-777.jpg"> EKG headset </a>
+            which is uncomfortable to sleep in and thus making it harder to collect natural sleeping data. By analyzing sleep data over a period of time, it's entirely possible to diagnose mental disorders such as Alzheimer's or depression and provide the
+            early detection that is necessary for good treatment. There are so many ways this technology can be implemented, and I strongly encourage you to watch the video or read the paper to see how amazing it is!</p>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+            <a class="w3-button w3-black" href="#">1</a>
+            <a class="w3-button w3-hover-black" href="#">2</a>
+            <a class="w3-button w3-hover-black" href="#">3</a>
+            <a class="w3-button w3-hover-black" href="#">4</a>
+            <a class="w3-button w3-hover-black" href="#">5</a>
+            <a class="w3-button w3-hover-black" href="#">»</a>
+        </div>
+    </div>
+
+    <!--
+    <footer id="myFooter">
+        <div class="w3-container w3-theme-l2 w3-padding-32">
+            <h4>Footer</h4>
         </div>
 
-    </div>
+        <div class="w3-container w3-theme-l1">
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        </div>
+    </footer>
+-->
+    <!-- END MAIN -->
+</div>
+
+<script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+            overlayBg.style.display = "none";
+        } else {
+            mySidebar.style.display = 'block';
+            overlayBg.style.display = "block";
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+    }
+</script>
+
 </body>
 </html>
