@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Literature Summaries</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+    .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
+    }
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
+        <a href="explore.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Music</a>
+        <a href="projects.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projects</a>
+        <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+        <i class="fa fa-remove"></i>
+    </a>
+    <h4 class="w3-bar-item"><b>Links to Source</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="http://cs.au.dk/~stm/local-cache/gentry-thesis.pdf">A Fully Homomorphic Encryption Scheme</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="https://blog.cryptographyengineering.com/2012/01/02/very-casual-introduction-to-fully/">Casual Introduction to Homomorphic Encryption</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1 class="w3-text-teal">A Fully Homomorphic Encryption Scheme - Craig Gentry, 2009 </h1>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;On Friday of the first week of classes, two hours before the registration deadline, I signed up to take a privacy-oriented class with <a href="https://sauvikdas.com/">Dr. Sauvik Das</a>. I hoped to learn more about privacy and security, and my first day didn't disappoint. I heard the phrase "homomorphic encryption" mentioned in an offhand comment, and my curiosity led me to learn about a very interesting problem I had never heard of before! <br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;Before 2009, there was a open-ended problem that plagued the exploding field of cloud-computing. Say I was a privacy-concerned individual and I uploaded thousands and thousands of encrypted, private banking documents to Google servers. Then, I asked that the servers apply a 10% tax on all of my account balances. There was no way to complete this operation without individually decrypting every single document, finding the plaintext values, applying the 10% reduction, and re-encrypting it. Most people didn't trust cloud services with the keys to decrypt their documents in the first place, and thus large-scale external servers generally weren't used to store and operate on private data. This limitation was an obstacle to many awesome applications of cloud computing, such as large-scale processing of protected patient health data and anonymous citizen voting data.<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;The term 'homomorphic encryption' refers to an encryption scheme that allows operations to be applied to encrypted data <i> without ever decrypting it </i>. For example, say I upload an encrypted message to Gmail servers to my friend that says "hey man, what's up?". I decide that the message doesn't seem enthusiastic enough, so I ask Google to capitalize every letter such that the new message is "HEY MAN, WHAT'S UP?". If I used a homomorphic encryption scheme for my message, Google can make that change without ever knowing what's in the message. This was purely conceptual for quite a long time, and many scientists pursued a solution for around 30 years. A number of 'semi-homomorphic' encryption schemes arose, and you can guess, these schemes could perform some operations such as addition on an encrypted number, but not arbitrary operations. <br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;In an extremely impressive Ph.D dissertation by Dr. Gentry in 2009, the outline for a fully homomorphic encryption scheme was outlined. The specifics of the solution are a bit math-heavy and hard for myself to understand, but the underlying idea was to combine two semi-homomorphic schemes into a much stronger one. By cleverly combining existing solutions, he devised a system in which a NAND operation could be performed on the bits of a ciphertext while maintaining the original encryption scheme. If you don't have an introduction to computation, just about any operation you could dream of is implementable by some combination of NAND operations. By creating this scheme, he solved the much sought-after problem of fully homomorphic encryption (FHE).<br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;Dr. Gentry is now an industry researcher working at IBM's Watson Research Center, and has obtained a law degree from Harvard. He has gone on to improve his FHE designs and produce an insane amount of contributions to the cryptographic community.   
+            </p>
+        </div>
+    </div>
+
+ 
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+            <a class="w3-button w3-hover-black" href="news.html">1</a>
+            <a class="w3-button w3-hover-black" href="newspg2.html">2</a>
+            <a class="w3-button w3-black" href="#">3</a>
+            <a class="w3-button w3-hover-black" href="#">4</a>
+            <a class="w3-button w3-hover-black" href="#">5</a>
+            <a class="w3-button w3-hover-black" href="#">»</a>
+        </div>
+    </div>
+
+    <!--
+    <footer id="myFooter">
+        <div class="w3-container w3-theme-l2 w3-padding-32">
+            <h4>Footer</h4>
+        </div>
+
+        <div class="w3-container w3-theme-l1">
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        </div>
+    </footer>
+-->
+    <!-- END MAIN -->
+</div>
+
+<script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+            overlayBg.style.display = "none";
+        } else {
+            mySidebar.style.display = 'block';
+            overlayBg.style.display = "block";
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+    }
+</script>
+
+</body>
+</html>
