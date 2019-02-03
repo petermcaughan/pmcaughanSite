@@ -23,7 +23,7 @@ body{
     margin: 0;
     height:auto;
     /*background-image: url('../img/about/background.png');*/
-    background-color: #bbbbbb;
+    background-color: #999999;
     font-family: Montserrat_reg;
     color:white;
 }
@@ -58,7 +58,7 @@ body{
     left: 30vw;
     width: 40vw;
     /*background-color: lightsteelblue;*/
-    background-color: black;
+    background-color: #333333;
     height:200vw;
     z-index:-5;
 }
@@ -69,7 +69,7 @@ body{
     font-size: 1.2vw;
     left:1vw;
     width:39vw;
-    color:white;
+    color:#cccccc;
 }
 
 .top-bar {
@@ -97,7 +97,7 @@ body{
     left:3vw;
     height: 24vw;
     width: 25vw;
-    background-color: black;
+    background-color: #333333;
     border-radius: 10%;
     border-style: solid;
     border-color: #000000;
